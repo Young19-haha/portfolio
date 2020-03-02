@@ -1,0 +1,121 @@
+main {
+    padding: 0 50px 100px 50px;
+    /* padding-bottom: 100px; */
+}
+
+footer div {
+    text-align: right;
+}
+footer {
+    background-color: rgb(199, 196, 247);
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-to-index a{
+    position: relative;
+    bottom: 20px;
+}
+
+.top a:focus {
+    top: 0;
+}
+
+.bottom a{
+    position: relative;
+    bottom: 0;
+    padding: 0;
+}
+
+*:focus {
+    border: 2px solid darkblue;
+    border-radius: 2px;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    font-size: 30px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: dotted 2px black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project1, .project2, .project3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.project1-total, .project2-total, .project3-total {
+    transition: 0.3s;
+}
+
+.project1-total:hover, .project2-total:hover, .project3-total:hover {
+    background-color: rgba(211, 214, 216, 0.829);
+}
+
+img {
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.title, .project1-img, .project2-img, .project3-img {
+    padding: 10px;
+}
+
+.project1-content, .project2-content, .project3-content {
+    border: solid 2px lightslategrey;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 10px;
+    margin:0 20px 20px 20px;
+    line-height: 1.5;
+    text-indent: 20px;
+}
+
+
+@media screen and (min-width:800px) {
+    .project1-total, .project2-total, .project3-total {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    
+    .project1, .project2, .project3 {
+        /* grid-row: 1 / span 2; */
+        grid-column: 1 / span 1;
+    }
+
+    .project1-content, .project2-content, .project3-content {
+        list-style-type: disc;
+        border: none;
+        /* grid-row: 2 / span 1; */
+        grid-column: 2/ span 1;
+        align-self: center;
+    }
+
+    .project1 > .title {
+        grid-row: 1 / span 1;
+        grid-column: 2/span 1;
+
+}
+}

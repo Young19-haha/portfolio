@@ -1,0 +1,86 @@
+html {
+    /* background-image: url('../images/backgroundimg1.png'); */
+    /* background-repeat: no-repeat; */
+    background-color: lightyellow;
+    background-size: cover;
+    position: fixed;
+    margin: 0 3%;
+}
+img, p {
+    margin: auto;
+    border: 20px;
+}
+
+img {
+    width: 70%;
+    border-radius: 7px;
+}
+
+p, a, div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+div.item:hover {
+    background-color: khaki;
+}
+
+#self-introduction {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/backgroundimg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div.item {
+    flex-basis: 300px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px 20px 50px;
+    /* background: url('../images/backgroundimg1.png'); */
+    border-radius: 7px;
+    padding: 1% 1%;
+    background-color: lightblue;
+}
+
+.header {
+    /* display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0;
+    margin-bottom: 50px; */
+    background-color: rgb(201, 204, 207);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.fname {
+    font-size: 25pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lname {
+    font-size: 15pt;
+    /* text-align: justify; */
+}
+
+html {
+    background-color: rgba(238, 237, 237, 0.644);
+}
