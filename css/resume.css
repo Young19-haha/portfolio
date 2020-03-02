@@ -80,6 +80,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(1fr, 4);
+    grid-gap: 15px;
 }
 
 .education, .experience, .projects, .skills {
@@ -192,7 +193,7 @@ li {
     line-height: 1.5;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1062px) {
     .resume {
         display: flex;
         flex-direction: row;
@@ -202,9 +203,9 @@ li {
     }
 
     .education, .experience, .projects, .skills{
-        margin: 0;
+        margin: 2px;
         padding: 10px;
-        flex-basis: 400px;
+        flex-basis: 500px;
         /* min-width: 200px; */
     }
     .detail ul li {
