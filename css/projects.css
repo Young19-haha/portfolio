@@ -1,6 +1,7 @@
+/* referring source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
 main {
     padding: 0 50px 100px 50px;
-    /* padding-bottom: 100px; */
 }
 
 footer div {
@@ -11,11 +12,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 #skip a{
@@ -31,14 +27,6 @@ footer {
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-main p {
-    font-size: 23px;
-}
-
-h4 {
-    font-size: 28px;
 }
 
 .topnav {
@@ -69,7 +57,7 @@ h4 {
 }
 
 /* Hide the links inside the navigation menu (except for home) */
-.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4) {display: none;}
+.topnav a:nth-child(1), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5) {display: none;}
 .topnav.responsive {position: relative;}
 
 .topnav.responsive a {
@@ -92,6 +80,10 @@ transition: 0.5s;
     margin: 10px;
     padding-bottom: 10px;
     border-bottom: dotted 2px black;
+}
+
+main p, h4 {
+    font-size: 20px;
 }
 
 .container {
@@ -151,7 +143,7 @@ img {
         right: 0;
     }
 
-    .topnav a, .topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4){
+    .topnav a, .topnav a:nth-child(1), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5) {
         display: inline-block;
         text-align: center;
         font-size: 100%;

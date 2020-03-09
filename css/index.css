@@ -1,3 +1,5 @@
+/* referring source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
 html {
     background-color: black;
 }
@@ -31,7 +33,7 @@ html {
 }
 
 /* Hide the links inside the navigation menu (except for home) */
-.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4) {display: none;}
+.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5) {display: none;}
 .topnav.responsive {position: relative;}
 
 .topnav.responsive a {
@@ -84,7 +86,7 @@ img {
         right: 0;
     }
 
-    .topnav a, .topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4){
+    .topnav a, .topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5){
         display: inline-block;
         text-align: center;
         font-size: 100%;
