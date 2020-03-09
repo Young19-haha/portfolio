@@ -6,25 +6,43 @@
     <title>Zhengyang Zhao</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resume.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012737-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160012737-1');
+    </script>
+
+    <script src="js/icon.js"></script>
+
 </head>
 
 
 <body>
-    <header class="back-to-index"><a href="index.html">Back to main page</a></header>
-
     <a class = "skip" href="#skip">Skip to Main Content</a>
-    <header>
-      <nav>
-        <ul class="nav_links">
-          <li class="nav_item"><a href="index.html">About Me</a></li>
-          <li class="nav_item"><a href="#education">Education</a></li>
-          <li class="nav_item"><a href="#experience">Experience</a></li>
-          <li class="nav_item"><a href="#projects">Projects</a></li>
-          <!-- <li class="nav_item"><a href="#activities">Activities</a></li> -->
-          <li class="nav_item"><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
+    <header id='header' class="header">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html"  class="active">Resume</a>
+            <a href="mylife.html">My life</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
     </header>
+
     <main class="resume" id="skip">
 
         <div class="education">
