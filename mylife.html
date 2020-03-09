@@ -6,20 +6,36 @@
     <title>My life</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mylife.css">
+    <link rel="shortcut icon" type="image/png" href="images/life-icon.png">
 </head>
 <body>
-    <header class="back-to-index"><a href="index.html">Back to main page</a></header>
-    <main>
+    
+    <div id="skip"><a href="#main">Skip to main content</a></div>
 
-        <header id="main">
-        <h2>My Life</h2>
-        </header>
+    <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <div class="topnav" id="myTopnav">
+            <a href="mylife.html" class="active">My life</a>
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+    </div>
+    
+    
+    <header>
+        <div><h1>My Life</h1></div>
+    </header>
+
+    <main id="main">
         <div class="activities">
 
             <div class="tokyo">
-                <!-- <div class="tokyo-img">
-                    <img src="images/tokyo1.jpg" alt="/">
-                </div> -->
                 <div class="tokyo-description">
                     <a id="tokyo"></a>
                 <h2>International Exchange Program</h2>
@@ -28,13 +44,7 @@
 
             </div>
 
-            <div class="extra">
-                <!-- <div class="extra-img"> -->
-                    <!-- <img src="https://lh3.googleusercontent.com/proxy/vND45MlPZQJbn_EcRtnn-5dFOnoQvWmspz_D1mReDfIY8wbr_M-tDKwGzY3GQPAQ9gInrZIXatQSadgfGenQa7trJrEtLrBJePNiuM5R0Ap7SCSIXVA6suMPbiMKlb_N" alt="/"> -->
-                    <!-- <img src="images/basketball1.jpg" alt="/"> -->
-                    <!-- <img src="images/basketball2.jpg" alt="/"> -->
-                <!-- </div> -->
-                
+            <div class="extra">                
                 <div class="extra-description">
                     <a id="extra"></a>
                 <h2>Extra Curriculum Activities</h2>
@@ -48,25 +58,19 @@
                 <!-- </div> -->
                 
                 <div class="volunteer-description">
-                    <a a="volunteer"></a>
+                    <a id="volunteer"></a>
                     <h2>Volunteer</h2>
                         <p>Worked as a volunteer at hospital playing piano for patients</p>
                 </div>
-
             </div>
-
         </div>
-
-
     </main>
     
     <footer>
-        <p>&copy;Designed by Zhengyang Zhao</p>
-        <div class="back-to-index">
-            <p><a href="index.html">Back to main page</a></p>
-        </div>
-    
+        <p>&copy;Designed by Zhengyang Zhao</p>    
     </footer>
+
+    <script src="js/icon.js"></script>
 </body>
 
 </html>
