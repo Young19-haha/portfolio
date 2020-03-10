@@ -1,7 +1,7 @@
 /* referrance: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* referrance: https://codepen.io/colorlib/pen/KVoZyv */
 
-* {font-family:  fantasy;}
+* {font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 /* nav bar in mobile mode */
 .topnav {
@@ -22,7 +22,7 @@
     display: block;
 }
 .topnav a:hover {background-color: rgba(255, 255, 255, 0.452);}
-.topnav a.active {background-color: rgba(238, 181, 181, 0.432);}
+.topnav a.active {background-color: rgba(124, 122, 122, 0.336);}
 .topnav a.icon {
     position: absolute;
     right: 0;
@@ -116,9 +116,9 @@ button {
     /* form */
     .rows {
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 9fr;
         grid-template-rows: 30px 30px 100px 30px;
-        grid-gap: 10px;
+        grid-gap: 20px;
     }
     .left-col {
         display: block;
