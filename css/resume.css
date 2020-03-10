@@ -71,6 +71,7 @@ footer {
 /* Style navigation menu links */
 .topnav a {
     color: black;
+    background-color: whitesmoke;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;

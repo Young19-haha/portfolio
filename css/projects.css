@@ -43,6 +43,7 @@ footer {
 /* Style navigation menu links */
 .topnav a {
     color: black;
+    background-color: transparent;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -82,7 +83,7 @@ footer {
     border-bottom: dotted 2px black;
 }
 
-main li, h4 {
+main li, h2 {
     font-size: 20px;
     line-height: 1.5;
 }
