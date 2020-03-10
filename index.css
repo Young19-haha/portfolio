@@ -1,0 +1,145 @@
+/* referring source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
+html {
+    background-color: black;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none; 
+    padding: 0 10px 0 10px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    background-color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a:hover {background-color: rgb(124, 122, 122);}
+.topnav a.active {background-color: rgba(63, 63, 63, 0.726);}
+.topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Hide the links inside the navigation menu (except for home) */
+.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5) {display: none;}
+.topnav.responsive {position: relative;}
+
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+transition: 0.5s;
+}
+/* Style the hamburger menu */
+.topnav .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 150%;
+    background-color: rgba(68, 68, 68, 0.151);
+    margin: 2px;
+    padding: 10px;
+    font-family: monospace;
+    color: white;
+    max-width: 500px;
+}
+
+img {
+    width: 400px;
+}
+
+@keyframes example {
+    from {color: black}
+    to {color: white;}
+}
+
+@media screen and (min-width:800px){
+    html{
+        /* background-image: url('../images/profile.png'); 
+        background-attachment: fixed; /* Parallax effect */     
+        /* background-position: center;  Parallax effect */
+        /* background-repeat: no-repeat; Parallax effect */
+        /* background-size: cover;       Parallax effect */
+        /* color: white; */
+        background-color: black;
+    }
+
+    .topnav {
+        position: absolute;
+        right: 0;
+    }
+
+    .topnav a, .topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5){
+        display: inline-block;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav a:hover{
+        background-color: rgba(248, 248, 248, 0.247);
+        color: white;
+        transition: 0.5s;
+    }
+
+    #self-introduction {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 3fr 2fr;
+        grid-template-columns: 3fr 2fr;
+        padding: 50px;
+        margin: auto;
+        
+    }
+    
+    img{
+        /* display: none; */
+        width: 100%;
+        justify-self: right;
+    }
+
+    .photo {
+        -ms-grid-column: 1 / span 1;
+        grid-column: 1 / span 1;
+        
+    }
+    
+    div p {
+        -ms-grid-column: 2 / span 1;
+        grid-column: 2 / span 1;
+        line-height: 2;
+        font-size: 180%;
+        animation-name: example;
+        animation-duration: 2.5s;
+        margin-top: 100px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
+}
