@@ -136,8 +136,14 @@ transition: 0.5s;
     transition: 0.3s ease-in-out;
 }
 
+.gallery {
+    display: block
+}
+
 img {width: 300px; 
-    height: 300px;}
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -162,7 +168,40 @@ img {width: 300px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.flip-card-back {transform: rotateY(180deg);}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+@media screen and (min-width:370px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 150px);
+        grid-gap: 5px;
+    }
+    .flip-card {justify-self: center;}
+    #card2 {grid-row: 2 / span 1;
+            grid-column: 2 / span 1;}
+    #card3 {grid-row: 3 / span 1;}
+    #card4 {grid-row: 4 / span 1;
+            grid-column: 2 / span 1;}
+    #card5 {grid-row: 5 / span 1;}
+    #card6 {grid-row: 6 / span 1;
+            grid-column: 2 / span 1;}
+    #card7 {grid-row: 7 / span 1;}
+    #card8 {grid-row: 8 / span 1;
+            grid-column: 2 / span 1;}
+    #card9 {grid-row: 9 / span 1;}
+
+}
 
 @media screen and (min-width: 800px) {
     .topnav {
@@ -190,5 +229,60 @@ img {width: 300px;
 
     #main {
         padding: 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 920px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 150px);
+        grid-gap: 10px;
+        padding-bottom: 180px;
+    }
+    #card2 {grid-row: 2 / span 1;
+            grid-column: 2 / span 1;}
+    #card3 {grid-row: 1 / span 1;
+            grid-column: 3 / span 1;}
+    #card4 {grid-row: 3 / span 1;
+            grid-column: 1 / span 1;}
+    #card5 {grid-row: 3 / span 1;
+            grid-column: 3 / span 1;}
+    #card6 {grid-row: 4 / span 1;
+            grid-column: 2 / span 1;}
+    #card7 {grid-row: 5 / span 1;
+            grid-column: 1 / span 1;}
+    #card8 {grid-row: 5 / span 1;
+            grid-column: 3 / span 1;}
+    #card9 {grid-row: 6 / span 1;
+            grid-column: 2 / span 1;}
+
+}
+
+@media screen and (min-width: 1350px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 300px);
+        grid-gap: 10px;
+        padding: 30px;
+    }
+    #card2, #card3, #card4 {grid-row: 1 / span 1;
+            grid-column: 2 / span 1;}
+    #card3 {grid-column: 3 / span 1;}
+    #card4 {grid-column: 4 / span 1;}
+    #card5, #card6, #card7, #card8 {grid-row: 2 / span 1;
+            grid-column: 1 / span 1;}
+    #card6 {grid-column: 2 / span 1;}
+    #card7 {grid-column: 3 / span 1;}
+    #card8 {grid-column: 4 / span 1;}
+    #card9 {grid-row: 3 / span 1;
+            grid-column: 2 / span 2;}
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
     }
 }

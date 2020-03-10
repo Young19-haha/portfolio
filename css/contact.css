@@ -136,3 +136,9 @@ button {
     }
     textarea {height: 80px;}
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
+}

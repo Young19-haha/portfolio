@@ -56,10 +56,11 @@ p {
     line-height: 1.5;
     font-size: 150%;
     background-color: rgba(68, 68, 68, 0.151);
-    border: 2px solid black;
+    margin: 2px;
     padding: 10px;
     font-family: monospace;
     color: white;
+    max-width: 500px;
 }
 
 img {
@@ -127,4 +128,10 @@ img {
         margin-top: 100px;
     }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
 }

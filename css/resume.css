@@ -208,3 +208,9 @@ li {
         transition: 0.5s;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
+}
