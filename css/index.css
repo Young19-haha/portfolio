@@ -55,7 +55,7 @@ p {
     line-height: 1.5;
     font-size: 150%;
     background-color: rgba(68, 68, 68, 0.151);
-    margin: 2px black;
+    border: 2px solid black;
     padding: 10px;
     font-family: monospace;
     color: white;
