@@ -115,7 +115,7 @@ transition: 0.5s;
     flex-basis: 500px;
 }
 .text-block:hover {
-    background-color: (223, 223, 223, 0.856);}
+    background-color: rgba(223, 223, 223, 0.856);}
 
 .date {
     font-size: 90%;
