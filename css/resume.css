@@ -1,60 +1,11 @@
 /* referring source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 
-html {
-    background-color: rgba(230, 230, 230, 0.952);
-}
-
-*:focus {
-    border: 2px solid darkblue;
-    border-radius: 7px;
+body {
+    background-color: #F9F9F9;
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1{
-    font-size: 32px;
-    line-height: 1;
-    padding: 50px 0;
-    text-align: center;
-}
-  
-h2, h4, h5{
-    font-size: 24px;
-    line-height: 1.5;
-    transition: 0.5s ease-in-out;
-}
-h2:hover {
-    background-color: rgba(73, 71, 71, 0.733);
-    color: white;
-    transition: 0.5s ease-in-out;
-    padding: 10px;
-}
-
-h4 {
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h5 {
-    font-size: 15px;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-.skip {
-    position: relative;
-    bottom: 40px;
-}
-
-.skip a:focus {
-    top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
 .topnav {
@@ -62,23 +13,23 @@ footer {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 150%;
-    color: black;
     font-weight: bold;
     text-decoration: none; 
     padding: 0 10px 0 10px;
+    background-color: black;
 }
 
 /* Style navigation menu links */
 .topnav a {
-    color: black;
-    background-color: whitesmoke;
+    color: white;
+    background-color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
 }
-.topnav a:hover {background-color: rgba(248, 223, 186, 0.925);}
-.topnav a.active {background-color: rgba(219, 219, 219, 0.945);}
+.topnav a:hover {background-color: rgb(124, 122, 122);}
+.topnav a.active {background-color: rgba(63, 63, 63, 0.726);}
 .topnav a.icon {
     position: absolute;
     right: 0;
@@ -97,11 +48,40 @@ transition: 0.5s;
 }
 /* Style the hamburger menu */
 .topnav .icon {
-    background: white;
+    background: black;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    transition: 0.5s ease-in-out;
+}
+h1:hover {
+    background-color: rgba(73, 71, 71, 0.733);
+    color: white;
+    transition: 0.5s ease-in-out;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.skip {
+    position: relative;
+    bottom: 40px;
+}
+
+.skip a:focus {
+    border: 2px solid darkblue;
+    border-radius: 7px;
 }
 
 .resume {
@@ -193,7 +173,7 @@ li {
     .topnav {
         position: relative;
         text-align: right;
-        background-color: whitesmoke;
+        background-color: black;
     }
     .topnav a, .topnav a:nth-child(1), .topnav a:nth-child(2), .topnav a:nth-child(4), .topnav a:nth-child(5){
         display: inline-block;

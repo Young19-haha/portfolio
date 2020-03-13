@@ -22,8 +22,8 @@
     font-size: 17px;
     display: block;
 }
-.topnav a:hover {background-color: rgba(255, 255, 255, 0.452);}
-.topnav a.active {background-color: rgba(124, 122, 122, 0.336);}
+.topnav a:hover {background-color: rgb(124, 122, 122);}
+.topnav a.active {background-color: rgba(63, 63, 63, 0.726);}
 .topnav a.icon {
     position: absolute;
     right: 0;
@@ -48,7 +48,7 @@
 /* style form */
 #contact {
     background: #F9F9F9;
-    padding: 25px 50px;   
+    padding: 25px 50px;
 }
 #contact h3 {
     display: block;
@@ -82,7 +82,7 @@ button {
     font-size: 15px;
 }
 
-
+body {margin: 0; }
 
 
 @media screen and (min-width:800px){
@@ -112,7 +112,6 @@ button {
         padding: 50px;
         margin: auto;
     }
-
 
     /* form */
     .rows {

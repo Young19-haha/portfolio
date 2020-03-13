@@ -84,8 +84,9 @@ img {
     }
 
     .topnav {
-        position: absolute;
-        right: 0;
+        position: relative;
+        text-align: right;
+        background-color: transparent;
     }
 
     .topnav a, .topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5){
@@ -122,7 +123,7 @@ img {
         grid-column: 1 / span 1;
     }
     
-    p {
+    div p {
         -ms-grid-column: 2 / span 1;
         grid-column: 2 / span 1;
         line-height: 2;

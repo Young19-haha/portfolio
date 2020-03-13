@@ -18,20 +18,17 @@ footer {
 }
 
 #skip a{
-    position: relative;
-    bottom: 25px;
+    position: absolute;
+    left: -200px;
 }
 
 #skip a:focus {
-    top: 0;
+    left: 0;
     border: 2px solid darkblue;
     border-radius: 2px;
 }
 
-*:focus {
-    border: 2px solid darkblue;
-    border-radius: 2px;
-}
+
 
 header {
     background-attachment: fixed; /* Parallax effect */     

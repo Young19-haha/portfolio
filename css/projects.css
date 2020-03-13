@@ -34,25 +34,27 @@ footer {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 150%;
-    color: black;
     font-weight: bold;
     text-decoration: none; 
     padding: 0 10px 0 10px;
+    background-color: black;
 }
 
 /* Style navigation menu links */
 .topnav a {
-    color: black;
-    background-color: transparent;
+    color: white;
+    background-color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
 }
-.topnav a:hover {background-color: rgba(248, 223, 186, 0.925);}
-.topnav a.active {background-color: rgba(219, 219, 219, 0.945);}
+.topnav a:hover {background-color: rgb(124, 122, 122);}
+.topnav a.active {background-color: rgba(63, 63, 63, 0.726);}
 .topnav a.icon {
     position: absolute;
+    background: black;
+    display: block;
     right: 0;
     top: 0;
 }
@@ -69,7 +71,7 @@ footer {
 }
 /* Style the hamburger menu */
 .topnav .icon {
-    background: white;
+    background: black;
     display: block;
     position: absolute;
     right: 0;
@@ -145,8 +147,9 @@ img {
     }
 
     .topnav {
-        position: absolute;
-        right: 0;
+        position: relative;
+        text-align: right;
+        background-color: black;
     }
 
     .topnav a, .topnav a:nth-child(1), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5) {
