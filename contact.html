@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,11 +21,8 @@
 
 </head>
 <body>
-
+    <a class="skip" href="#main"> Skip to main content</a>
     <header id='header' class="header">
-
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Top Navigation Menu -->
         <div class="topnav" id="myTopnav">
@@ -35,14 +32,13 @@
             <a href="mylife.html">My life</a>
             <a href="contact.html" class="active">Contact</a>
 
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="link">
-            <i class="fa fa-bars"></i>
-        </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="link">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </header>
     
-    <main>
+    <main id="main">
         <form action="https://formspree.io/xlenygva" method="POST" id="contact">
             <h3>Email Me!</h3>
 
