@@ -2,13 +2,10 @@
 /* referring source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
 p, div {
     line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
-
-h2 {
-    font-size: 25px;
-}
+h1 {font-size: 30px;}
+h2 {font-size: 25px;}
 
 .bigtitle {
     background-attachment: fixed; /* Parallax effect */     
@@ -41,7 +38,7 @@ h2 {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: stretch;
 }
 
@@ -58,7 +55,8 @@ h2 {
 }
 
 .gallery {
-    display: block
+    display: block;
+    margin-bottom: 150px;
 }
 
 img {width: 300px; 
@@ -101,11 +99,11 @@ img {width: 300px;
     text-align: center;
 }
 
-@media screen and (min-width:370px) {
+@media screen and (min-width:500px) {
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(9, 150px);
+        grid-template-rows: repeat(10, 150px);
         grid-gap: 5px;
     }
     .flip-card {justify-self: center;}
@@ -121,7 +119,7 @@ img {width: 300px;
     #card8 {grid-row: 8 / span 1;
             grid-column: 2 / span 1;}
     #card9 {grid-row: 9 / span 1;}
-
+    
 }
 
 @media screen and (min-width: 800px) {
