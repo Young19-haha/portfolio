@@ -93,7 +93,7 @@ img {width: 300px;
 }
   
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: #1C5982;
     color: white;
     transform: rotateY(180deg);
     text-align: center;
