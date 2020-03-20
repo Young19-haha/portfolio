@@ -4,6 +4,8 @@ html {
     background-color: black;
 }
 
+.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(5), .topnav a:nth-child(4) {display: none;}
+
 p {
     line-height: 1.5;
     font-size: 150%;

@@ -7,6 +7,8 @@ p, div {
 h1 {font-size: 30px;}
 h2 {font-size: 25px;}
 
+.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(1), .topnav a:nth-child(5) {display: none;}
+
 .bigtitle {
     background-attachment: fixed; /* Parallax effect */     
     background-position: bottom;  /* Parallax effect */
@@ -79,7 +81,7 @@ img {width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
   
-.flip-card:hover .flip-card-inner {transform: rotateY(180deg);}
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {transform: rotateY(180deg);}
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
