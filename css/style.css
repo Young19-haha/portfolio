@@ -8,10 +8,11 @@
     z-index: -1;
 }
 
-.skip:focus {
+.skip:focus, *:focus {
     border: 2px solid white;
     border-radius: 7px;
     color: white;
+    background-color: black;
     z-index: 1;
 }
 .header {background-color: black;}
@@ -27,12 +28,16 @@
     /* background-color: black; */
 }
 .topnav a {
-    color: white;
+    color: whitesmoke;
     /* background-color: black; */
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
+
+    text-shadow: 
+        0 -1px 0 #fff, 
+        0 4px 0 #2c2c2c
 }
 .topnav a:hover {background-color: rgb(124, 122, 122);}
 .topnav a.active {background-color: rgba(63, 63, 63, 0.726);}
@@ -79,12 +84,12 @@ body {margin: 0; }
     to {color: white;}
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:700px){
     
     /* navbar in screen */
     .topnav {
         position: relative;
-        text-align: right;
+        text-align: center;
         background-color: black;
     }
     .topnav a, .topnav a:nth-child(1),.topnav a:nth-child(2), .topnav a:nth-child(3), .topnav a:nth-child(4), .topnav a:nth-child(5){
@@ -100,6 +105,10 @@ body {margin: 0; }
         color: white;
         transition: 0.5s;
     }
+}
+
+@media screen and (min-width:1020px) {
+    .topnav {text-align: right;}
 }
 
 @media (prefers-reduced-motion: reduce) {
